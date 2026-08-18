@@ -1,9 +1,11 @@
+vim.pack.add({ { src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" } })
+
 local treesitter = require("nvim-treesitter")
 
 local ensure_installed = {
     "go", "elixir", "python", "rust", "typescript", "javascript", "tsx",
     "html", "css", "json", "bash",
-    "http", "dockerfile",
+    "http", "dockerfile", "lua",
 }
 
 treesitter.install(ensure_installed)
